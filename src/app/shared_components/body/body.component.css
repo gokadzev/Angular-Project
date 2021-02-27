@@ -1,0 +1,294 @@
+.bodyEnd {
+  justify-content: center;
+  display: grid;
+}
+
+.socMedia {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ng-fa-icon {
+  font-size: 20px;
+}
+
+button {
+  width: 110px;
+  height: 47px;
+  box-shadow: 5px 5px #99ffc3;
+  border: 2px solid #37A866;
+  color: #37A866;
+  background-color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+button:hover {
+  color: white;
+  background-color: #37A866;
+}
+
+.Lhover:hover {
+  opacity: 1;
+}
+
+.textOnHover:hover~.hover {
+  opacity: 1;
+}
+
+
+.LtextOnHover:hover~.Lhover {
+  opacity: 1;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.hover:hover {
+  opacity: 1;
+}
+
+.shortAboutTxt {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  margin-top: 70px;
+  font-size: 30px;
+
+}
+
+
+.seeMyResiume {
+  color: #37A866;
+  margin-top: 50px;
+  margin-bottom: 130px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 25px;
+}
+
+
+
+
+/* responsive */
+
+
+@media only screen and (min-width: 300px) {
+
+
+
+
+  .bodySec {
+    margin: 0px 14px 0px 14px;
+  }
+
+
+  .left {
+    position: relative;
+    width: 100%;
+    height: 436px;
+    overflow: hidden;
+  }
+
+  .right {
+    position: relative;
+    width: 100%;
+    height: 436px;
+    overflow: hidden;
+  }
+
+  .hover {
+    background-color: #37A866;
+    position: absolute;
+    transition: all 0.3s ease;
+    opacity: 0;
+    height: 555.09px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+  }
+
+
+
+  .Lhover {
+    background-color: #37A866;
+    position: relative;
+    transition: all 0.3s ease;
+    opacity: 0;
+    height: 568.09px;
+    width: 100%;
+    bottom: 610px;
+  }
+
+
+
+  .white-text {
+    color: white;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    height: 10px;
+
+  }
+
+  .Lwhite-text {
+    color: white;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    height: 10px;
+
+  }
+
+
+  .textOnHover {
+    position: relative;
+    top: -122%;
+    vertical-align: middle;
+    line-height: 470px;
+    height: 10px;
+    text-align: center;
+    z-index: 10;
+
+  }
+
+  .LtextOnHover {
+    position: relative;
+    top: -107.1%;
+    vertical-align: middle;
+    line-height: 542px;
+    height: 10px;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .doublePic {
+    margin-top: -5%;
+  }
+
+  .bodyPic {
+    width: 100%;
+    height: 495.00px;
+    object-fit: cover;
+    position: relative;
+    transform: unset;
+  }
+
+  .bodyLPic {
+    width: 100%;
+    object-fit: cover;
+    height: 600.00px;
+    overflow: hidden;
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+  }
+
+  .Lpic {
+    height: 572px;
+    overflow: hidden;
+  }
+
+
+}
+
+
+
+@media only screen and (min-width: 770px) {
+
+  .doublePic {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+@media only screen and (max-width: 845px) {
+  .shortAboutTxt {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+  .doublePic .left, .doublePic .right, .Lpic{
+    animation-name: appearEffect;
+    animation-duration: 1.7s;
+  }
+
+
+  .bodySec {
+    margin: 0px 40px;
+  }
+
+
+
+
+  .left {
+    position: relative;
+    width: 50%;
+    height: 555px;
+    overflow: hidden;
+  }
+
+  .right {
+    position: relative;
+    width: 50%;
+    height: 555px;
+    overflow: hidden;
+  }
+
+
+  .white-text {
+    color: white;
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+    height: 10px;
+
+  }
+
+
+
+  .bodyPic {
+    height: 700px;
+  }
+
+  .bodyLPic {
+    height: 700px;
+  }
+
+
+  .Lpic {
+    height: 650px;
+
+  }
+
+
+
+  .Lhover {
+    height: 584.09px;
+    width: 100%;
+    bottom: 710px;
+  }
+
+
+}
+
+
+
+@keyframes appearEffect {
+  from {
+    opacity: 0;
+    transform: translate(20px, 20px) rotate(20deg) scale(.3);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0) rotate(0) scale(1);
+  }
+}

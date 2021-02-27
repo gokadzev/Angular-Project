@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap);
+
+
+
+.onmobilefix {
+  width: 0%;
+}
+
+
+ul {
+  list-style-type: none;
+}
+
+.navbar {
+  margin-top: 25px;
+}
+
+.navbar-nav {
+  width: 100%;
+}
+
+.nav-link {
+  color: black !important;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.72px;
+}
+
+.navbar-brand {
+  color: #007309 !important;
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.6px;
+}
+
+.navbar-title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+
+.dp-item {
+  color: #212529;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.dropitem {
+  margin-bottom: 10px;
+}
+
+.dropbutton {
+  border: none;
+  margin-top: 6px;
+  background: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+}
+
+.dropbutton1 {
+  border: none;
+  margin-top: 6px;
+  background: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+}
+
+.mob-dp-link,
+.mob-nav-link {
+  font-family: 'Nunito', sans-serif;
+  font-size: 25px;
+}
+
+.dropmenu {
+  position: absolute;
+}
+
+
+.dropbutton:focus,
+.dropbutton1:focus {
+  outline: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.ng-fa-icon {
+  font-size: 13px;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.onmobile {
+  display: none;
+}
+
+::ng-deep .mat-accordion {
+  display: none;
+}
+
+.openPanelClass {
+  background: white;
+  height: 1000px;
+  position: absolute;
+  right: 0px;
+  top: 0;
+  width: 100% !important;
+  padding-right: 10px;
+}
+
+
+.closePanelClass {
+  background: none;
+  height: 80px;
+  width: 50px;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+
+  .navbar-expand-sm {
+    flex-flow: row nowrap;
+  }
+
+  .onmobilefix {
+    width: 20%;
+    width: calc(100% - 200px);
+  }
+
+  .onmobile {
+    display: block;
+    width: calc(100% - 0px);
+  }
+
+
+  .onmobileopen {
+    display: block;
+    width: calc(100% - 0px);
+    top: 37px;
+    position: relative;
+    z-index: 10;
+  }
+
+  ::ng-deep .mat-icon {
+    position: relative;
+    left: -10px;
+  }
+
+  ::ng-deep .mat-accordion {
+    display: block;
+  }
+
+
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    margin: 0px;
+    top: 0px;
+    z-index: 1000;
+    background: none !important;
+    padding: 0px;
+  }
+
+
+  .nav-link,
+  .dropbutton,
+  .dropbutton1 {
+    font-size: 26px;
+  }
+
+  .mat-body p,
+  .mat-body-1 p,
+  .mat-typography p {
+    margin: 0 6px 0px;
+  }
+
+  .dropbutton,
+  .dropbutton1 {
+    margin-left: 12px;
+  }
+
+  .workpage {
+    margin-top: -10px;
+  }
+
+
+  .mobdropmenu {
+    position: relative;
+    right: 56px;
+    bottom: 100px;
+    background: white;
+    width: 494px;
+    height: 1001px;
+    text-align: center;
+  }
+
+  .mat-expanded {
+    bottom: 28px;
+    width: 600px;
+  }
+
+  .mat-expansion-panel.ng-tns-c132-0 {
+    box-shadow: none;
+  }
+
+  .mat-expansion-panel-header {
+    width: 50px;
+    padding: 0px;
+    position: relative;
+    top: 16px;
+    float: right;
+  }
+
+  ::ng-deep .mat-expansion-panel-content {
+    margin-top: 200px;
+  }
+
+  .mat-expansion-panel-header.mat-expanded {
+    background: none !important;
+    position: relative;
+    z-index: 100;
+    float: right;
+  }
+
+
+  .mat-expansion-panel-spacing {
+    height: 1000px;
+    overflow: hidden;
+  }
+
+  ::ng-deep .mat-expansion-panel-body {
+    padding: 0px;
+    text-align: center;
+  }
+
+  .noBackground {
+    background: none;
+  }
+
+
+}
+
+
+
+
+
+@media only screen and (min-width: 770px) {
+  .smallMobileNavbar {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+<section class="blog-Page">
+<div class="addBlog">
+    <button (click)="showBlogCreator()" class="blogAddButton">Add Blog</button>
+</div>
+<h3 class="pageTitle">Blog</h3>
+<app-blog-creator *ngIf="showAddBlogWindow == true"></app-blog-creator>
+<section class="blogs-area">
+    <app-blog *ngFor="let item of userBlogs | slice:startShowNumFrom:endShowNumTo; let i=index" [blog]="item"></app-blog>
+</section>
+<section class="navigationButtons">
+    <button *ngIf="startShowNumFrom >= 4" (click)="goToBack()"><fa-icon [icon]="faAngleLeft"></fa-icon> Newer</button>
+    <button *ngIf="endShowNumTo < userBlogs.length" (click)="goToNext()"> Older <fa-icon [icon]="faAngleRight"></fa-icon></button>
+</section> 
+</section>

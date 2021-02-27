@@ -1,0 +1,75 @@
+.education {
+  margin-top: 100px;
+  display: block;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.education p {
+  margin: 0px 10%;
+}
+
+
+.education img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+.education a {
+  color: #5c755e;
+}
+
+.aboutMarketing {
+  margin: 30px 260px;
+}
+
+.aboutAcademy {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 500;
+}
+
+.whoAmI {
+  margin: 30px 260px;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+}
+
+@media only screen and (min-width: 1200px) {
+.education img {
+  animation: appearEffect 1.7s;
+}
+
+h3 {
+  animation: fromLeftToRight 1.7s;
+}
+
+}
+
+@keyframes fromLeftToRight {
+  from{
+    transform: translateX(-40%);
+  } to {
+    transform: translateX(0%);
+  }
+}
+
+
+@keyframes appearEffect {
+  from {
+    opacity: 0;
+    transform: translate(20px, 20px) rotate(100deg) scale(.3);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0) rotate(0) scale(1);
+  }
+}
+

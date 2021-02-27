@@ -1,0 +1,118 @@
+.navigationButtons button {
+  border: none;
+  color: rgb(160, 158, 158);
+  background: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  height: 20px;
+  padding: 8px;
+  box-shadow: none;
+}
+
+button {
+
+  width: 110px;
+  height: 47px;
+  font-size: 12px;
+  position: relative;
+  box-shadow: 5px 5px #99ffc3;
+  border: 2px solid #37A866;
+  font-family: 'Oswald', sans-serif;
+  color: #37A866;
+  background-color: white;
+}
+
+.addBlog {
+  float: right;
+  margin-right: 28px;
+
+}
+
+button:focus {
+  outline:0;
+}
+
+
+button:hover,
+.blogAddButton:hover {
+  color: white;
+  background-color: #37A866;
+}
+
+.blogAddButton {
+  width: 110px;
+  height: 47px;
+  box-shadow: 5px 5px #99ffc3;
+  border: 2px solid #37A866;
+  color: #37A866;
+  background-color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  left: 0px;
+}
+
+.navigationButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.ng-fa-icon {
+  font-size: 20px;
+}
+
+.blogs-area {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* responsive */
+
+
+@media only screen and (min-width: 300px) {
+
+
+  .blog-Page {
+    margin-top: 100px;
+  }
+
+  .pageTitle {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    margin: 40px auto;
+  }
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (min-width: 521px) {
+
+
+  .pageTitle {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+    margin: 40px auto;
+  }
+
+}
+
+
+@media only screen and (min-width: 767px) {
+
+.blog-Page {
+  margin-top: 50px;
+}
+
+}
+
+
+

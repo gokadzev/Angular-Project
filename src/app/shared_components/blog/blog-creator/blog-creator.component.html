@@ -1,0 +1,23 @@
+<form>
+    <div class="mb-3">
+        <label for="CreatorField" class="form-label">Image URL</label>
+        <input
+         [(ngModel)]="newBlog.urlToImage"
+         type="text" class="form-control" id="creatorImageField" name="blogImage">
+      </div>
+      <div class="mb-3">
+          <label for="CreatorField" class="form-label">Blog Title</label>
+          <input
+          [(ngModel)]="newBlog.title"
+           type="text" class="form-control" id="creatorTitleField" name="blogTitle">
+        </div>
+        <div class="mb-3">
+            <label for="CreatorField" class="form-label">Blog URL</label>
+            <input
+            [(ngModel)]="newBlog.url"
+             type="text" class="form-control" id="creatorTitleField" name="blogurl">
+          </div>
+      <button (click)="onAddBlogButton()" type="submit" class="btn">Submit</button>
+</form>
+
+
